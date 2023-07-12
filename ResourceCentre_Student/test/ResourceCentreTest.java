@@ -111,8 +111,8 @@ public class ResourceCentreTest {
 		assertEquals("Test that Camcorder arraylist size is 2.", 2, camcorderList.size());
 		// Attempt to retrieve the Camcoders 
 		allCamcorder= ResourceCentre.retrieveAllCamcorder(camcorderList);
-		testOutput = String.format("%-10s %-30s %-10s %-10s %-10d\n","CC0011", "Nikon HDSLR", "Yes", "", 40);
-		testOutput += String.format("%-10s %-30s %-10s %-10s %-10d\n","CC0012", "Sony DSC-RX100M7", "Yes", "", 20);
+		testOutput = String.format("%-10s %-30s %-10s %-10s %-20d\n","CC0011", "Nikon HDSLR", "Yes", "", 40);
+		testOutput += String.format("%-10s %-30s %-10s %-10s %-20d\n","CC0012", "Sony DSC-RX100M7", "Yes", "", 20);
 		// Test that the details are displayed correctly
 		assertEquals("Test that the display is correct.", testOutput, allCamcorder);
 
